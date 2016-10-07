@@ -1,0 +1,48 @@
+<!doctype html>
+<title>Radical #204 (embroidery)</title>
+<h2>0</h2>
+<div>
+	<a href="http://www.unicode.org/cgi-bin/GetUnihanData.pl?codepoint=2FA17&useutf8=true">黹</a>
+	<a href="http://www.unicode.org/cgi-bin/GetUnihanData.pl?codepoint=9EF9&useutf8=true">黹</a>
+</div>
+<h2>4</h2>
+<div>
+	<a href="http://www.unicode.org/cgi-bin/GetUnihanData.pl?codepoint=2B71C&useutf8=true">𫜜</a>
+	<a href="http://www.unicode.org/cgi-bin/GetUnihanData.pl?codepoint=9EFA&useutf8=true">黺</a>
+</div>
+<h2>5</h2>
+<div>
+	<a href="http://www.unicode.org/cgi-bin/GetUnihanData.pl?codepoint=9EFB&useutf8=true">黻</a>
+</div>
+<h2>6</h2>
+<div>
+	<a href="http://www.unicode.org/cgi-bin/GetUnihanData.pl?codepoint=2A4CB&useutf8=true">𪓋</a>
+</div>
+<h2>7</h2>
+<div>
+	<a href="http://www.unicode.org/cgi-bin/GetUnihanData.pl?codepoint=9EFC&useutf8=true">黼</a>
+</div>
+<h2>8</h2>
+<div>
+	<a href="http://www.unicode.org/cgi-bin/GetUnihanData.pl?codepoint=2A4CC&useutf8=true">𪓌</a>
+</div>
+<h2>9</h2>
+<div>
+	<a href="http://www.unicode.org/cgi-bin/GetUnihanData.pl?codepoint=2A4CD&useutf8=true">𪓍</a>
+	<a href="http://www.unicode.org/cgi-bin/GetUnihanData.pl?codepoint=2A4CE&useutf8=true">𪓎</a>
+	<a href="http://www.unicode.org/cgi-bin/GetUnihanData.pl?codepoint=2A4CF&useutf8=true">𪓏</a>
+</div>
+<h2>11</h2>
+<div>
+	<a href="http://www.unicode.org/cgi-bin/GetUnihanData.pl?codepoint=2A4D0&useutf8=true">𪓐</a>
+</div>
+
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+<script>
+$('div').css({display:'flex',flexWrap:'wrap'});
+$('a').each(function() {
+	var self = $(this);
+	var codepoint = self.attr('href').replace('http://www.unicode.org/cgi-bin/GetUnihanData.pl?codepoint=','').replace('&useutf8=true','').toLowerCase();
+	self.before('<div style="padding:5px;width:160px"><a href="gen-m.php?name=u' + codepoint + '" target=_blank><img src="http://en.glyphwiki.org/glyph/hkcs_m' + codepoint + '.svg" width=50 height=50></a> (' + self.text() + ' U+' + codepoint.toUpperCase() + ')</div>').remove();
+});
+</script>

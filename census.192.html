@@ -1,0 +1,60 @@
+<!doctype html>
+<title>Radical #192 (sacrificial wine)</title>
+
+<h2>0</h2>
+<div>
+	<a href="http://www.unicode.org/cgi-bin/GetUnihanData.pl?codepoint=9B2F&useutf8=true">鬯</a>
+</div>
+<h2>5</h2>
+<div>
+	<a href="http://www.unicode.org/cgi-bin/GetUnihanData.pl?codepoint=29C20&useutf8=true">𩰠</a>
+	<a href="http://www.unicode.org/cgi-bin/GetUnihanData.pl?codepoint=29C21&useutf8=true">𩰡</a>
+</div>
+<h2>6</h2>
+<div>
+	<a href="http://www.unicode.org/cgi-bin/GetUnihanData.pl?codepoint=29C22&useutf8=true">𩰢</a>
+</div>
+<h2>8</h2>
+<div>
+	<a href="http://www.unicode.org/cgi-bin/GetUnihanData.pl?codepoint=29C23&useutf8=true">𩰣</a>
+</div>
+<h2>10</h2>
+<div>
+	<a href="http://www.unicode.org/cgi-bin/GetUnihanData.pl?codepoint=29C24&useutf8=true">𩰤</a>
+</div>
+<h2>11</h2>
+<div>
+	<a href="http://www.unicode.org/cgi-bin/GetUnihanData.pl?codepoint=29C25&useutf8=true">𩰥</a>
+	<a href="http://www.unicode.org/cgi-bin/GetUnihanData.pl?codepoint=29C26&useutf8=true">𩰦</a>
+</div>
+<h2>12</h2>
+<div>
+	<a href="http://www.unicode.org/cgi-bin/GetUnihanData.pl?codepoint=29C27&useutf8=true">𩰧</a>
+</div>
+<h2>13</h2>
+<div>
+	<a href="http://www.unicode.org/cgi-bin/GetUnihanData.pl?codepoint=29C28&useutf8=true">𩰨</a>
+</div>
+<h2>17</h2>
+<div>
+	<a href="http://www.unicode.org/cgi-bin/GetUnihanData.pl?codepoint=9B30&useutf8=true">鬰</a>
+	<a href="http://www.unicode.org/cgi-bin/GetUnihanData.pl?codepoint=29C29&useutf8=true">𩰩</a>
+</div>
+<h2>18</h2>
+<div>
+	<a href="http://www.unicode.org/cgi-bin/GetUnihanData.pl?codepoint=29C2A&useutf8=true">𩰪</a>
+</div>
+<h2>19</h2>
+<div>
+	<a href="http://www.unicode.org/cgi-bin/GetUnihanData.pl?codepoint=9B31&useutf8=true">鬱</a>
+</div>
+
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+<script>
+$('div').css({display:'flex',flexWrap:'wrap'});
+$('a').each(function() {
+	var self = $(this);
+	var codepoint = self.attr('href').replace('http://www.unicode.org/cgi-bin/GetUnihanData.pl?codepoint=','').replace('&useutf8=true','').toLowerCase();
+	self.before('<div style="padding:5px;width:160px"><a href="gen-m.php?name=u' + codepoint + '" target=_blank><img src="http://en.glyphwiki.org/glyph/hkcs_m' + codepoint + '.svg" width=50 height=50></a> (' + self.text() + ' U+' + codepoint.toUpperCase() + ')</div>').remove();
+});
+</script>
