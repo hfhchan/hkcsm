@@ -1,0 +1,79 @@
+<!doctype html>
+<title>Radical #165 (distinguish)</title>
+
+<h2>0</h2>
+<div>
+	<a href="http://www.unicode.org/cgi-bin/GetUnihanData.pl?codepoint=91C6&useutf8=true">釆</a>
+</div>
+<h2>1</h2>
+<div>
+	<a href="http://www.unicode.org/cgi-bin/GetUnihanData.pl?codepoint=91C7&useutf8=true">采</a>
+</div>
+<h2>3</h2>
+<div>
+	<a href="http://www.unicode.org/cgi-bin/GetUnihanData.pl?codepoint=2890F&useutf8=true">𨤏</a>
+</div>
+<h2>4</h2>
+<div>
+	<a href="http://www.unicode.org/cgi-bin/GetUnihanData.pl?codepoint=91C8&useutf8=true">釈</a>
+	<a href="http://www.unicode.org/cgi-bin/GetUnihanData.pl?codepoint=28910&useutf8=true">𨤐</a>
+	<a href="http://www.unicode.org/cgi-bin/GetUnihanData.pl?codepoint=28911&useutf8=true">𨤑</a>
+</div>
+<h2>5</h2>
+<div>
+	<a href="http://www.unicode.org/cgi-bin/GetUnihanData.pl?codepoint=2B480&useutf8=true">𫒀</a>
+	<a href="http://www.unicode.org/cgi-bin/GetUnihanData.pl?codepoint=91C9&useutf8=true">釉</a>
+	<a href="http://www.unicode.org/cgi-bin/GetUnihanData.pl?codepoint=91CA&useutf8=true">释</a>
+</div>
+<h2>7</h2>
+<div>
+	<a href="http://www.unicode.org/cgi-bin/GetUnihanData.pl?codepoint=28912&useutf8=true">𨤒</a>
+	<a href="http://www.unicode.org/cgi-bin/GetUnihanData.pl?codepoint=28913&useutf8=true">𨤓</a>
+	<a href="http://www.unicode.org/cgi-bin/GetUnihanData.pl?codepoint=28914&useutf8=true">𨤔</a>
+</div>
+<h2>8</h2>
+<div>
+	<a href="http://www.unicode.org/cgi-bin/GetUnihanData.pl?codepoint=28915&useutf8=true">𨤕</a>
+	<a href="http://www.unicode.org/cgi-bin/GetUnihanData.pl?codepoint=28916&useutf8=true">𨤖</a>
+	<a href="http://www.unicode.org/cgi-bin/GetUnihanData.pl?codepoint=28917&useutf8=true">𨤗</a>
+</div>
+<h2>9</h2>
+<div>
+	<a href="http://www.unicode.org/cgi-bin/GetUnihanData.pl?codepoint=28918&useutf8=true">𨤘</a>
+	<a href="http://www.unicode.org/cgi-bin/GetUnihanData.pl?codepoint=28919&useutf8=true">𨤙</a>
+</div>
+<h2>10</h2>
+<div>
+	<a href="http://www.unicode.org/cgi-bin/GetUnihanData.pl?codepoint=24CDB&useutf8=true">𤳛</a>
+	<a href="http://www.unicode.org/cgi-bin/GetUnihanData.pl?codepoint=2891A&useutf8=true">𨤚</a>
+	<a href="http://www.unicode.org/cgi-bin/GetUnihanData.pl?codepoint=2891B&useutf8=true">𨤛</a>
+	<a href="http://www.unicode.org/cgi-bin/GetUnihanData.pl?codepoint=2891C&useutf8=true">𨤜</a>
+</div>
+<h2>11</h2>
+<div>
+	<a href="http://www.unicode.org/cgi-bin/GetUnihanData.pl?codepoint=2891D&useutf8=true">𨤝</a>
+</div>
+<h2>13</h2>
+<div>
+	<a href="http://www.unicode.org/cgi-bin/GetUnihanData.pl?codepoint=91CB&useutf8=true">釋</a>
+	<a href="http://www.unicode.org/cgi-bin/GetUnihanData.pl?codepoint=2891E&useutf8=true">𨤞</a>
+</div>
+<h2>14</h2>
+<div>
+	<a href="http://www.unicode.org/cgi-bin/GetUnihanData.pl?codepoint=2891F&useutf8=true">𨤟</a>
+	<a href="http://www.unicode.org/cgi-bin/GetUnihanData.pl?codepoint=28920&useutf8=true">𨤠</a>
+</div>
+<h2>15</h2>
+<div>
+	<a href="http://www.unicode.org/cgi-bin/GetUnihanData.pl?codepoint=28921&useutf8=true">𨤡</a>
+</div>
+
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+<script>
+$('div').css({display:'flex',flexWrap:'wrap'});
+$('a').each(function() {
+	var self = $(this);
+	var codepoint = self.attr('href').replace('http://www.unicode.org/cgi-bin/GetUnihanData.pl?codepoint=','').replace('&useutf8=true','').toLowerCase();
+	self.before('<div style="padding:5px;width:160px"><a href="gen-m.php?name=u' + codepoint + '" target=_blank><img src="http://en.glyphwiki.org/glyph/hkcs_m' + codepoint + '.svg" width=50 height=50></a> (' + self.text() + ' U+' + codepoint.toUpperCase() + ')</div>').remove();
+});
+</script>
